@@ -23,7 +23,7 @@ void arquivo() {
 
 void cadastro() {
     system("cls");  
-    documento.open("arquivo.doc");
+    documento.open("arquivo.doc", ios::app);
     cout << "\nNome do paciente: ";
     cin >> nome;
     cout << "\nHorario: ";
@@ -33,7 +33,7 @@ void cadastro() {
     cout << "\nNúmero para contato: ";
     cin >> numero;
 
-    documento << "PACIENTE " << nome << "\n\nHorario: " << horario << "\nDia: " << dia << "\nContato: +55 " << numero;
+    documento << "\n\nPACIENTE " << nome << "\n\nHorario: " << horario << "\nDia: " << dia << "\nContato: +55 " << numero << "\n\nID: " << id += 1;
 
     cout << "\nDados gravados com sucesso !!";
 
